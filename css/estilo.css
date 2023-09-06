@@ -1,0 +1,229 @@
+.contenedor-principal{
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+}
+
+body{
+    background-color: rgb(242, 252, 255);
+}
+
+.subtitulo-nav{
+    padding: 0;
+    margin: 0;
+    padding-top: 10px;
+    font-size: 20px;
+    transition: color 0.5s ease;
+}
+
+.tabla-rojo{
+    color: rgb(255, 0, 0);
+}
+
+.titulo-contenedor{
+    font-weight: 600;
+    background-color: rgb(224, 241, 255);
+    width: fit-content;
+    padding: 5px;
+    border-radius: 2px;
+
+}
+
+.subtitulo{
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.boton-tabla-seleccionar{
+    border-radius: 3px;
+    width: 40px;
+    height: 30px;
+}
+
+.boton-tabla-borrar{
+    border-radius: 3px;
+    width: 40px;
+    height: 30px;
+}
+
+.tabla-ajuste{
+    max-height: 250px;
+    overflow-y: scroll;
+}
+
+.tabla-ajuste::-webkit-scrollbar {
+    display: none;
+}
+
+.linea{
+    border: 3px solid rgb(49, 49, 49);
+}
+
+.titulos{
+    font-weight: 600;
+}
+
+/**** nav ******/
+.titulo-nav{
+    color: rgb(56, 56, 56);
+    font-weight: 600;
+    font-size: 45px;
+}
+
+
+.contenedor-nav{
+    padding-left: 40px;
+}
+
+/**** registrar ****/
+.registrar-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.registrar-container-compra{
+    flex: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    column-gap: 20px;
+}
+
+.registrar-container-compra-form{
+    padding: 20px;
+    border: 2px solid rgb(98, 98, 98);
+    flex: 50%;
+}
+
+.registrar-compra-form-datos{
+    margin-bottom: 30px;
+    display: grid;
+    column-gap: 30px;
+    row-gap: 2px;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(
+            300px,
+            1fr
+        )
+    );
+}
+
+.registrar-container-compra-tabla{
+    padding: 20px;
+    border: 2px solid rgb(98, 98, 98);
+    flex: 50%;
+}
+
+.registrar-container-proveedor{
+    flex: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    column-gap: 20px;
+}
+
+.registrar-container-proveedor-form{
+    flex: 50%;
+}
+
+.registrar-container-proveedor-tabla{
+    flex: 50%;
+}
+
+/*** grafico ***/
+.graficos-contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    padding: 0;
+}
+
+.graficos-subcontenedor{
+    padding: 20px;
+    border: 2px solid rgb(98, 98, 98);
+    flex: 100%;
+    box-sizing:border-box
+}   
+
+.grafico-pie{
+    display: grid;
+    column-gap: 10px;
+    row-gap: 20px;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(
+            400px,
+            1fr
+        )
+    );
+}
+
+.item-grid-pie{
+    justify-self: center;
+    box-sizing:border-box
+}
+
+.grafico-barra{
+    box-sizing:border-box;
+}
+
+.total-graficos{
+    font-size: 20px;
+    font-weight: 900;
+}
+/*** reporte ***/
+.reporte-contendor{
+    display: flex;
+    flex-wrap: nowrap;
+    column-gap: 20px;
+}
+
+.reporte-contenedor-1{
+    padding: 20px;
+    border: 2px solid rgb(98, 98, 98);
+    flex: 30%;
+    height: fit-content;
+}
+
+.reporte-contenedor-2{
+    padding: 20px;
+    border: 2px solid rgb(98, 98, 98);
+    flex: 70%;
+}
+
+.reporte-contendor-titulo{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.reporteflex1{
+    flex: 50%;
+}
+
+.reporteflex2{
+    flex: 50%;
+    text-align: right;
+}
+
+.btn-pdf{
+    color: red;
+    background-color: transparent;
+    border: none;
+}
+
+
+@media (max-width: 900px) {
+    .registrar-container-compra, .registrar-container-proveedor, .reporte-contendor{
+        row-gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .contenedor-principal{
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+
+    .contenedor-nav{
+        padding-left: 7px;
+    }
+  }
+
