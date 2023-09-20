@@ -1,7 +1,7 @@
 <?php
-$host="";
-$bd="";
-$usuario="";
+$host="localhost";
+$bd="sistemaluna";
+$usuario="root";
 $contraseña="";
 
 try {
